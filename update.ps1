@@ -23,13 +23,13 @@ Write-Host "Pulling ScratchModArchive..."
 git -C $scratchModArchivePath pull
 
 Write-Host "Pulling PenguinMod-ExtensionsGallery..."
-git -C $penguinModPath pull
+git clone $penguinModPath
 
 Write-Host "Pulling TurboWarp extensions..."
-git -C $turboWarpPath pull
+git clone $turboWarpPath
 
 Write-Host "Pulling SharkPools-Extensions..."
-git -C $sharkPoolPath pull
+git clone $sharkPoolPath
 
 # Step 2: Copy all files, always overwriting
 Write-Host "Copying PenguinMod files..."
